@@ -1,0 +1,122 @@
+body {
+    background-color: #1e1e2f;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: #3a506b;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+    border: 2px solid #ffcc00;
+}
+
+.container:hover {
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5);
+    transform: scale(1.03);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 24px;
+    color: #ffcc00;
+    text-transform: uppercase;
+    font-weight: bold;
+    animation: glow 1.5s infinite alternate;
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 12px #ffcc00; }
+    to { text-shadow: 0 0 25px #ffd633; }
+}
+
+#chat-box {
+    height: 250px;
+    overflow-y: auto;
+    background: #58414c;
+    padding: 12px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border: 3px solid #ffcc00;
+    color: white;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 15px;
+    border-radius: 6px;
+    border: 2px solid #ffcc00;
+    margin-top: 8px;
+    transition: 0.3s;
+    font-size: 16px;
+    background: #0f172a;
+    color: white;
+}
+
+input[type="text"]::placeholder {
+    color: #b0b0b0;
+    opacity: 1;
+}
+
+input[type="text"]:focus {
+    border-color: #ffaa00;
+    box-shadow: 0 0 8px #ffaa00;
+    outline: none;
+}
+
+#message {
+    height: 75px;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    text-transform: uppercase;
+}
+
+.btn-primary {
+    background-color: #ffcc00;
+    border: none;
+    color: black;
+}
+
+.btn-primary:hover {
+    background-color: #ffaa00;
+    transform: scale(1.06);
+}
+
+.btn-success {
+    background-color: #17b978;
+    border: none;
+    color: white;
+}
+
+.btn-success:hover {
+    background-color: #1dd1a1;
+    transform: scale(1.06);
+}
+
+p {
+    background: #162447;
+    padding: 10px;
+    border-radius: 6px;
+    margin: 6px 0;
+    color: white;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+p:hover {
+    background: #1f4068;
+    transform: scale(1.03);
+}
